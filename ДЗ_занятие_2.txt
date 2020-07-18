@@ -1,0 +1,59 @@
+= Задание 1 =
+
+ubuntu@ip-172-31-30-182:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-30-182:~$ ls -l
+total 0
+ubuntu@ip-172-31-30-182:~$ mkdir first
+ubuntu@ip-172-31-30-182:~$ mkdir second
+ubuntu@ip-172-31-30-182:~$ ls -l
+total 8
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jul 18 17:38 first
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jul 18 17:38 second
+ubuntu@ip-172-31-30-182:~$ cd first
+ubuntu@ip-172-31-30-182:~/first$ echo 'num = 1' > first.py
+ubuntu@ip-172-31-30-182:~/first$ echo 'print(num)' >> first.py
+ubuntu@ip-172-31-30-182:~/first$ cd ~
+ubuntu@ip-172-31-30-182:~$ cd second
+ubuntu@ip-172-31-30-182:~/second$ echo 'num = 2' > second.py
+ubuntu@ip-172-31-30-182:~/second$ echo 'print(num)' >> second.py
+
+= Задание 2 =
+
+ubuntu@ip-172-31-30-182:~/second$ cd ~
+ubuntu@ip-172-31-30-182:~$ mv second/second.py first/
+ubuntu@ip-172-31-30-182:~$ cd first
+ubuntu@ip-172-31-30-182:~/first$ ls -l
+total 8
+-rw-rw-r-- 1 ubuntu ubuntu 19 Jul 18 17:43 first.py
+-rw-rw-r-- 1 ubuntu ubuntu 19 Jul 18 17:47 second.py
+ubuntu@ip-172-31-30-182:~/first$ cd ~
+ubuntu@ip-172-31-30-182:~$ cd second
+ubuntu@ip-172-31-30-182:~/second$ ls -l
+total 0
+
+= Задание 3 =
+
+ubuntu@ip-172-31-30-182:~/second$ cd ~
+ubuntu@ip-172-31-30-182:~$ rm second -r
+ubuntu@ip-172-31-30-182:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-30-182:~$ ls -l
+total 4
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jul 18 18:31 first
+
+= Задание 4 =
+
+ubuntu@ip-172-31-30-182:~$ mv first first_second
+ubuntu@ip-172-31-30-182:~$ ls -l
+total 4
+drwxrwxr-x 2 ubuntu ubuntu 4096 Jul 18 18:31 first_second
+
+= Задание 5 =
+
+ubuntu@ip-172-31-30-182:~$ rm first_second -r
+ubuntu@ip-172-31-30-182:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-30-182:~$ ls -l
+total 0
+
