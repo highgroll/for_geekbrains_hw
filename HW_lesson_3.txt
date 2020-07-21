@@ -1,0 +1,44 @@
+= Задание 1 =
+
+ubuntu@ip-172-31-30-182:~$ vim program.py
+ubuntu@ip-172-31-30-182:~$ ls
+program.py
+ubuntu@ip-172-31-30-182:~$ cat program.py
+print('Hello World!')
+
+= Задание 2 =
+
+ubuntu@ip-172-31-30-182:~$ cat program.py | wc -l
+1
+
+= Задание 3 =
+
+ubuntu@ip-172-31-30-182:~$ vim program_2.py
+ubuntu@ip-172-31-30-182:~$ cat program_2.py
+print('Linear regression')
+
+= Задание 4 =
+
+ubuntu@ip-172-31-30-182:~$ cat program.py program_2.py
+print('Hello World!')
+print('Linear regression')
+
+= Задание 5 =
+
+ubuntu@ip-172-31-30-182:~$ cat -n program.py
+     1  print('Hello World!')
+
+ubuntu@ip-172-31-30-182:~$ cat program.py program_2.py > program_3.py
+ubuntu@ip-172-31-30-182:~$ cat program_3.py
+print('Hello World!')
+print('Linear regression')
+
+ubuntu@ip-172-31-30-182:~$ ls
+program.py  program_2.py  program_3.py
+ubuntu@ip-172-31-30-182:~$ cat *.py
+print('Hello World!')
+print('Linear regression')
+print('Hello World!')
+print('Linear regression')
+
+
