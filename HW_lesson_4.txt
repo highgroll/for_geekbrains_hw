@@ -1,0 +1,35 @@
+= Задание 1=
+
+ubuntu@ip-172-31-30-182:~$ vim my_file.py
+ubuntu@ip-172-31-30-182:~$ ls
+my_file.py
+ubuntu@ip-172-31-30-182:~$ cat my_file.py
+print('Hello World!')
+ubuntu@ip-172-31-30-182:~$ sudo useradd -m -s /bin/bash user_new
+ubuntu@ip-172-31-30-182:~$ sudo passwd user_new
+ubuntu@ip-172-31-30-182:~$ chmod o+w my_file.py
+ubuntu@ip-172-31-30-182:~$ ls -l my_file.py
+
+= Задание 2 =
+
+ubuntu@ip-172-31-30-182:~$ su user_new
+ubuntu@ip-172-31-30-182:~$ whoami
+user_new
+ubuntu@ip-172-31-30-182:~$ vim my_file.py
+ubuntu@ip-172-31-30-182:~$ cat my_file.py
+print('Hello Team!')
+
+= Задание 3 =
+
+ubuntu@ip-172-31-30-182:~$ cd~
+ubuntu@ip-172-31-30-182:~$ pwd
+/home/user_new
+ubuntu@ip-172-31-30-182:~$ vim print_numbers.py
+ubuntu@ip-172-31-30-182:~$ cat print_numbers.py
+import numpy as np
+import time
+numbers = np.arange(1, 11)
+for el in numbers:
+print(el)
+time.sleep(1)
+ubuntu@ip-172-31-30-182:~$ python3 print_numbers.py
