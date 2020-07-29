@@ -1,0 +1,19 @@
+= Задание 1 =
+user1@NDPC0030:~$ sudo apt install htop
+user1@NDPC0030:~$ htop
+
+= Задание 2 =
+
+user1@NDPC0030:~$ ls -l
+total 0
+-rw-rw-rw- 1 user1 user1 12 Jul 29 22:12 file.py
+-rw-rw-rw- 1 user1 user1  3 Jul 29 22:15 hello.txt
+-rw-rw-rw- 1 user1 user1  6 Jul 29 22:12 new_file.py
+-rw-rw-rw- 1 user1 user1  5 Jul 29 22:14 new_file_2.txt
+-rw-rw-rw- 1 user1 user1  0 Jul 29 22:14 ok
+-rw-rw-rw- 1 user1 user1 20 Jul 29 22:13 python.py
+user1@NDPC0030:~$ find *.py
+file.py
+new_file.py
+python.py
+user1@NDPC0030:~$
