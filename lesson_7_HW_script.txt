@@ -1,0 +1,29 @@
+= Задание 1 =
+user1@NDPC0030:~$ pwd
+/home/user1
+user1@NDPC0030:~$ ls
+file.py  hello.txt  new_file.py  new_file_2.txt  ok  python.py  temp.py
+user1@NDPC0030:~$ find -name 't*.py'
+./temp.py
+
+= Задание 2 =
+
+#Вывод с именами файлов
+user1@NDPC0030:~$ grep -r 'print' /home/user1/*.py
+/home/user1/file.py:print(Hello!)
+/home/user1/new_file.py:print(Hello!)
+/home/user1/python.py:print('hello team')
+/home/user1/temp.py:print(f)
+
+#Вывод без имен файлов
+user1@NDPC0030:~$ grep -r -h 'print' /home/user1/*.py
+print(Hello!)
+print(Hello!)
+print('hello team')
+print(f)
+
+= Задание 3 =
+user1@NDPC0030:~$ uptime
+ 21:10:30 up  1:32,  0 users,  load average: 0.52, 0.58, 0.59
+user1@NDPC0030:~$ uptime | sed 's/.*up  \(.*:.*\),  [0-9].*/\1/'
+1:32
