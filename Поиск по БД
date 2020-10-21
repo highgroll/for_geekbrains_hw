@@ -1,0 +1,7 @@
+#Пример кода для поиска в собранной БД всех подписок конкретного аккаунта
+
+db.instagram.find({'account_name':'aviationdaily', 'tag':'subscription'})
+
+#Пример кода для поиска в собранной БД всех подписчиков конкретного аккаунта
+
+db.instagram.find({'account_name':'aviationdaily', 'tag':'follower'})
