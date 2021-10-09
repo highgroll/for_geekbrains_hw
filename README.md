@@ -1,1 +1,7 @@
-# for_geekbrains_hw
+Итоговый проект
+
+Предсказание стоимости акций Amazon
+
+Содержит два файла:
+1. Prepare_and_train.py - подготовка данный и обучение модели
+2. Prediction_cassandra_app.py - предсказание.
